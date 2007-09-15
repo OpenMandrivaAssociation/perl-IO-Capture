@@ -3,7 +3,7 @@
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 Name:		perl-%{real_name}
 Version:	0.05
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
