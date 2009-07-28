@@ -1,16 +1,18 @@
-%define real_name IO-Capture
+%define upstream_name    IO-Capture
+%define upstream_version 0.05
+
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
-Name:		perl-%{real_name}
-Version:	0.05
-Release:	%mkrel 4
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	%{real_name}-%{version}.tar.bz2
-BuildRequires:	perl-devel
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The IO::Capture Module defines an abstract base class that can be
@@ -24,7 +26,7 @@ modules and how to build a module to sub-class the B<IO::Capture>
 class yourself.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,4 +47,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/IO/Capture.pm
 %{perl_vendorlib}/IO/Capture/*
 %{_mandir}/*/*
-
