@@ -12,6 +12,7 @@ URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
+BuildRequires:  perl-Test-Simple
 BuildArch:	noarch
 
 %description
