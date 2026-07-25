@@ -2,13 +2,13 @@
 %define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
+URL:		https://metacpan.org/dist/IO-Capture
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	make
