@@ -1,15 +1,13 @@
 %define upstream_name    IO-Capture
-%define upstream_version 0.05
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.05
+Release:	7
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/IO-Capture
-Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	%{upstream_name}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ modules and how to build a module to sub-class the B<IO::Capture>
 class yourself.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
