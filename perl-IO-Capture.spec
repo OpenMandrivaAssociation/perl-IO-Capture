@@ -2,7 +2,7 @@
 %define upstream_version 0.05
 Name:		perl-%{upstream_name}
 Version:	0.04
-Release:	1
+Release:	2
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 License:	GPL+ or Artistic
@@ -27,7 +27,7 @@ modules and how to build a module to sub-class the B<IO::Capture>
 class yourself.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n IO-Capture-0.05
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
