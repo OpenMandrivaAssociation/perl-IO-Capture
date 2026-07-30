@@ -1,13 +1,14 @@
 %define upstream_name    IO-Capture
+%define upstream_version 0.05
 Name:		perl-%{upstream_name}
-Version:	0.05
-Release:	7
+Version:	0.04
+Release:	1
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/IO-Capture
-Source0:	%{upstream_name}-%{version}.tar.bz2
+Source0:	https://cpan.metacpan.org/authors/id/R/RE/REYNOLDS/IO-Capture-0.05.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,31 +44,4 @@ make test
 %{perl_vendorlib}/IO/Capture/*
 %{_mandir}/*/*
 
-
-%changelog
-* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
-+ Revision: 402546
-- update to 0.56
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.05-4mdv2009.0
-+ Revision: 257289
-- rebuild
-
-* Thu Dec 20 2007 Olivier Blin <oblin@mandriva.com> 0.05-2mdv2008.1
-+ Revision: 135856
-- restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Sat Sep 15 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.05-2mdv2008.0
-+ Revision: 86494
-- rebuild
-
-
-* Wed Sep 13 2006 Oden Eriksson <oeriksson@mandriva.com> 0.05-1mdv2007.0
-- rebuild
-
-* Fri Jul 15 2005 Oden Eriksson <oeriksson@mandriva.com> 0.05-1mdk
-- initial Mandriva package
 
