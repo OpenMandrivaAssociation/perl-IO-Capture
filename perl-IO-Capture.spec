@@ -1,8 +1,8 @@
 %define upstream_name    IO-Capture
 %define upstream_version 0.05
 Name:		perl-%{upstream_name}
-Version:	0.04
-Release:	2
+Version:	0.05
+Release:	1
 
 Summary:	IO::Capture- Abstract Base Class to build modules to capture output
 License:	GPL+ or Artistic
